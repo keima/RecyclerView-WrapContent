@@ -1,5 +1,5 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="net.pside.android.recyclerview_wrapcontent">
+<manifest package="net.pside.android.recyclerview_wrapcontent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
         android:allowBackup="false"
@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MatchParentActivity" />
+
+        <activity android:name=".WrapContentActivity" />
 
     </application>
 
