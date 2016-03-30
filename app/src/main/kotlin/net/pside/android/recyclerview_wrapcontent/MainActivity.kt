@@ -17,5 +17,9 @@ class MainActivity : AppCompatActivity() {
         wrapContentButton.setOnClickListener({
             startActivity(Intent(this, WrapContentActivity::class.java))
         })
+
+        wrapContentScrollViewButton.setOnClickListener({
+            startActivity(Intent(this, WrapContentScrollViewActivity::class.java))
+        })
     }
 }

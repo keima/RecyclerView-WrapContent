@@ -20,4 +20,11 @@
         android:text="wrap_content"
         />
 
+    <Button
+        android:id="@+id/wrapContentScrollViewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="wrap_content(+ScrollView)"
+        />
+
 </LinearLayout>
