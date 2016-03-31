@@ -7,8 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import net.pside.android.recyclerview_wrapcontent.R
 
-class MyRecyclerAdapter : RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>() {
+class MyRecyclerAdapter(amount: Int) : RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>() {
     val TAG = this.javaClass.simpleName
+
+    val amount = amount
 
     override fun onBindViewHolder(holder: MyViewHolder?, position: Int) {
         Log.d(TAG, "onBindViewHolder: position: ${position}");
@@ -20,7 +22,7 @@ class MyRecyclerAdapter : RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>()
     }
 
     override fun getItemCount(): Int {
-        return 50
+        return amount
     }
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MyViewHolder? {

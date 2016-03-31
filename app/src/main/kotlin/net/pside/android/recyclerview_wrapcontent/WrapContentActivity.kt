@@ -12,7 +12,7 @@ class WrapContentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_wrap_content)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = MyRecyclerAdapter()
+        recyclerView.adapter = MyRecyclerAdapter(intent.getIntExtra("amount", 0))
 
         // TODO: workaround fix
 //        Handler().postDelayed({

@@ -12,6 +12,6 @@ class MatchParentActivity : AppCompatActivity() {
         setContentView(R.layout.activity_match_parent)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = MyRecyclerAdapter()
+        recyclerView.adapter = MyRecyclerAdapter(intent.getIntExtra("amount", 0))
     }
 }

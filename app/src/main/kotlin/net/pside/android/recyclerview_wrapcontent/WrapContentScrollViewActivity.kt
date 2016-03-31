@@ -12,6 +12,6 @@ class WrapContentScrollViewActivity : AppCompatActivity() {
         setContentView(R.layout.activity_wrap_content_with_scrollview)
 
         recyclerView.layoutManager = LinearLayoutManager(this)
-        recyclerView.adapter = MyRecyclerAdapter()
+        recyclerView.adapter = MyRecyclerAdapter(intent.getIntExtra("amount", 0))
     }
 }
