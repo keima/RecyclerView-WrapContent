@@ -10,7 +10,7 @@ import net.pside.android.recyclerview_wrapcontent.R
 class MyRecyclerAdapter(amount: Int) : RecyclerView.Adapter<MyRecyclerAdapter.MyViewHolder>() {
     val TAG = this.javaClass.simpleName
 
-    val amount = amount
+    var amount = amount
 
     override fun onBindViewHolder(holder: MyViewHolder?, position: Int) {
         Log.d(TAG, "onBindViewHolder: position: ${position}");
