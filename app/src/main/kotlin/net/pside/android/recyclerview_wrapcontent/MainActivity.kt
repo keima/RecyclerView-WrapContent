@@ -17,14 +17,15 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         val amount = discreteSeekBar.progress
+        val isWait = checkBox.isChecked
 
         when (v) {
             matchParentButton ->
-                navigate<MatchParentActivity>(amount)
+                navigate<MatchParentActivity>(amount, isWait)
             wrapContentButton ->
-                navigate<WrapContentActivity>(amount)
+                navigate<WrapContentActivity>(amount, isWait)
             wrapContentScrollViewButton ->
-                navigate<WrapContentScrollViewActivity>(amount)
+                navigate<WrapContentScrollViewActivity>(amount, isWait)
         }
     }
 }
